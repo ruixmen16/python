@@ -3,8 +3,9 @@ from ROSTRO.CompararRostro import comparar
 from TEXTO.ocr import detectar_texto
 import cv2
 import numpy as np
-import sys
+import sys 
 app = Flask(__name__)
+
 
 def procesar_imagen_bytes(bytes_imagen):
     np_bytes = np.frombuffer(bytes_imagen, dtype=np.uint8)
